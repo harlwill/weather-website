@@ -14,7 +14,7 @@ request({ url, json: true }, (error, { body }) => {
 
     } else {
 
-        callback(undefined, body.daily.data[0].summary + 'The current temp is ' + body.currently.temperature + ', There is a ' + body.currently.precipProbability + '% chance of rain')
+        callback(undefined, body.daily.data[0].summary + 'The current temp is ' + body.currently.temperature + ', There is a ' + body.currently.precipProbability + '% chance of rain. High today: ' + body.daily.data[0].temperatureHigh + ' Low today: ' + body.daily.data[0].temperatureLow)
     }
     
 })

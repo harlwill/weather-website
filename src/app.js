@@ -91,5 +91,5 @@ app.get('*' , (req, res) => {
 })
 
 app.listen(port, () => {
-    console.log('Sever is up on port' + port)
+    console.log('Sever is up on port ' + port)
 })
